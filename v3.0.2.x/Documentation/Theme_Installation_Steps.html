@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documentation -  Opencart Theme nutripe</title>
+<link href="files/css/style.css" rel="stylesheet" type="text/css" />
+<link href="files/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="files/images/favicon.ico" />
+<script>document.createElement('section');var duration=500,easing='swing';</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+function fnSelect(objId)
+{
+fnDeSelect();
+if (document.selection)
+{
+var range = document.body.createTextRange();
+range.moveToElementText(document.getElementById(objId));
+range.select();
+}
+else if (window.getSelection)
+{
+var range = document.createRange();
+range.selectNode(document.getElementById(objId));
+window.getSelection().addRange(range);
+}
+}
+function fnDeSelect()
+{
+if (document.selection)
+document.selection.empty();
+else if (window.getSelection)
+window.getSelection().removeAllRanges();
+}
+</script>
+<!-- Script by hscripts.com -->
+</head>
+
+<body>
+<div class="left">
+  <div class="logo"><img src="files/images/logo.png" alt="logo"/></div>
+  <ul class="menu">
+    <li class="toclevel-0 quickstart"><a href="#quickstart"><span class="toctext">Quick Start</span></a></li>
+   <li><a href="#Thementic">Start</a></li>
+	<li class="toclevel-1"> <a href="#installation"><span class="toctext">Step 1 : Installation and Image Size Settings</span></a></li>
+	<li class="toclevel-1"> <a href="#imagesizesettings"><span class="toctext">Step 2 : Logo Settings </span></a></li>
+	<li class="toclevel-1"> <a href="#language"><span class="toctext">Step 3 : Language Settings </span></a></li>
+    <li class="toclevel-1"> <a href="#bannersettings"><span class="toctext">Step 4 : Banner Settings </span></a></li>	
+		<ul class="sublinks">
+			<li class="toclevel-1"><a href="#mainbanner"><span class="toctext">4.1 : Main Banner</span></a></li>
+			<li class="toclevel-1"><a href="#leftbanner"><span class="toctext">4.2 : Left Banner</span></a></li>
+			<li class="toclevel-1"><a href="#carouselbanner"><span class="toctext">4.3 : Carousel Banner</span></a></li>
+		</ul>
+	<li class="toclevel-1"> <a href="#htmlcontent"><span class="toctext" >Step 5 : HTML Content</span></a></li>
+	<li class="toclevel-1"> <a href="#bestseller"><span class="toctext">Step 6 : Bestsellers Products</span></a></li>		
+	<li class="toclevel-1"> <a href="#latest"><span class="toctext">Step 7 : Latest Products </span></a></li>
+	<li class="toclevel-1"> <a href="#special"><span class="toctext">Step 8: Special Product </span></a></li>
+	<li class="toclevel-1"> <a href="#featured"><span class="toctext">Step 9 : Featured Products </span></a></li>
+	<li class="toclevel-1"> <a href="#account"><span class="toctext">Step 10 : Account </span></a></li>
+	<li class="toclevel-1"> <a href="#affiliate"><span class="toctext">Step 11 : Affiliate </span></a></li>
+	<li class="toclevel-1"> <a href="#information"><span class="toctext">Step 12 : Information </span></a></li>
+	<li class="toclevel-1"> <a href="#newsletter"><span class="toctext">Step 13 : Newsletter </span></a></li>
+	<li class="toclevel-1"> <a href="#themeblog"><span class="toctext">Step 14 : ThemeBlog </span></a></li>
+	<li class="toclevel-1"><a href="#layoutsetting"><span class="toctext">Step 15 : Layout Setting </span></a></li>
+	<li class="toclevel-1"><a href="#morehelp"><span class="toctext">Step 16 : Need More Help? </span></a></li>
+
+	
+	
+  </ul>
+</div>
+<div class="right">
+
+<h2 id="quickstart">Follow the video tutorial for quick start of theme<a class="top" title="Go to Top" href="#Thementic">TOP</a></h2>
+	<ul class="red">
+		<li><strong class="red"><span class="red">The quick start is only for the new installation of Opencart, do not use it if you already have Opencart Store installed.<br></span></strong></li>
+	</ul><br/>
+		<div class="containers">
+			<iframe width="1000" height="500" src="https://www.youtube.com/embed/Y82U1tzPHOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+<h3 style="padding-top:70px;" id="Thementic"> </h3>
+<p class="mb10"><strong>We are pleased that you have chosen our theme.<br/>We hope you are enjoying the convenience, quality, and affordability of our theme.</strong></p>
+<p class="mb10">If you have any questions, please feel free to contact us via our support form. Thanks again for your purchase.</p>
+	<div class="link buttons">
+	
+	</div>
+	
+	<h3  id="Thementic"> </h3>
+
+<h2 class="theme-title" style="color:#000;">Opencart Theme nutripe</h2>
+<p class="mb10"><strong>Thanks for buying Opencart Theme.</strong></p>
+<p class="mb10">If you have any questions, please feel free to contact us. Thanks again for your purchase.</p>	
+  
+
+ <!-- Start installation--> 
+		<h2 id="installation" >Step 1 :  Installation and Image Size Settings <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+		<ul class="red">
+			<li><span class="red">Please, read the whole section, before attempting to install the theme.<br></span></li>
+			<li><strong class="red"><span class="red">IT IS RECOMMEND TO ALWAYS BACKUP YOUR SYSTEM BEFORE MAKING ANY UPGRADES OR CHANGES! </span> </strong> </li>
+		</ul><br/>
+		<ul>
+			<li>Copy the directories from &ldquo;themexxx(update)&rdquo; (provided in  to ZIP file) to your opencart root. Copy those directories at your opencart  root respectively, </li>
+			<li>e.g Your copy path will be </li>
+			<li><strong>&rdquo;admin&rdquo;</strong> (Overwrite this folder)</li>
+			<li><strong>&rdquo;catalog&rdquo;</strong> (Overwrite this folder)</li>
+			<li><strong>&rdquo;image&rdquo;</strong> (Overwrite this folder)</li>						
+		</ul><br />
+		
+		<ul>
+			<li>
+				<a href="files/images/pxuploadfile.jpg"><img class="img-border" src="files/images/pxuploadfile.jpg" width="1000" height="650"></a>
+			</li>
+			</ul>
+            <br/>
+			
+	    Now upload ocmod file, go to <strong>Extensions</strong> &gt; <strong>Installer</strong><br/>
+		Use the Upload file button and select the file <strong>nutripe.ocmod.zip</strong> from package folder.<br/>
+		Use the Upload file button and select the file <strong>productslidergrid-option.ocmod</strong> from package folder.<br/>
+		<strong>productslidergrid-option.ocmod </strong> extension allows  us to display product as grid or as slider.<br/>
+		Note:-  After installation of productslidergrid-option.ocmod ,if undefine index error appears then please edit the respective module and click on save button.(This may occur when it is installed for the first time).
+		
+		<br/>
+		<p>
+		<a href="files/images/Blog-zip-upload.jpg">
+			<img class="img-border" src="files/images/Blog-zip-upload.jpg"  width="1000" />
+		</a>
+		</p><br/>
+
+		Go to <strong>Extensions</strong> &gt; <strong>Modifications</strong> , and hit the blur Refresh button at the top right corner.<br/>
+		<br/>
+		<p>
+		<a href="files/images/Blog-blur-refresh.jpg">
+			<img class="img-border" src="files/images/Blog-blur-refresh.jpg"  width="1000" />
+		</a>
+		</p><br/>
+		
+		<ul>
+			<li>If you want to enable languages then you can download it from this site <a href="http://www.opencart.com">http://www.opencart.com </a>.</li>
+			<li>Download language from given url and paste it to your language directory.</li>
+			<li>Language directory root : <strong>"admin/language"</strong> and <strong>"catalog/language"</strong> .</li>					
+		</ul><br />
+		
+        <ul>
+			<li>Now we have to set our Template from Admin panel</li>
+			<li>Under Admin Panel &gt; <strong>Extensions</strong> &gt; <strong>Extensions</strong>,</li>
+            <li>Select <strong>Themes</strong> from Dropdown as shown below,</li>
+			<li>Now click on Edit button of <strong>Your Store</strong>.</li>
+			<li>Select <strong>nutripe</strong> into <strong>Theme Directory</strong> field,</li>
+			<li>Status <strong>Enabled</strong>,</li>
+			<li><br />
+            
+            <ul>
+			<li>
+				<a href="files/images/Theme_Select.jpg"><img class="img-border" src="files/images/Theme_Select.jpg" width="1200" height="500"></a>
+			</li>
+			</ul>
+            <br/>
+            
+			<p>
+			 For <strong>Image Size setting</strong>, <br/>
+			 Change Category Image size to : <strong>893 X 200</strong>,<br />
+			 Change product image thumb size to : <strong>585 X 674</strong>,<br />
+			 Change Product image List size to : <strong>278 X 320</strong>,<br />
+			 Change Additional Product image size to : <strong>585 X 674</strong>,<br />
+			 Change Related Product image size to : <strong>278 X 320</strong>,<br />		
+			 And Click on “<strong>Save</strong>” button at top right corner.
+		
+             <br/>
+             
+		</p>
+			</li>
+							
+		</ul><br/>
+		<ul>
+			<li>
+				<a href="files/images/Admin_Panel.png"><img class="img-border" src="files/images/Admin_Panel.png" width="1000" height="1000"></a>
+			</li>
+		</ul>        
+       
+		
+		</div>
+		<!-- End installation-->
+		
+		<div class="clear"></div>		
+
+		<!-- Start Image size settings--> 
+		<h2 id="imagesizesettings" > Step 2 : Logo settings <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+		<div class="containers">
+		<div class="text">
+
+		<p>
+		For Logo setting , Go to&nbsp; System &gt; Setting &gt; Edit &gt; <strong>Images</strong>, <br />
+		From <strong> Store Logo</strong> you can upload your logo image.<br/>
+	    From <strong> Theme Background</strong> you can upload your theme background image and set background property fixed or cover.<br/><br/>
+		<p>
+		<a href="files/images/logo-setting.jpg">
+		<img class="img-border" src="files/images/logo-setting.jpg"  width="1000" />
+		</a>
+		</p>
+
+		</p><br/>
+
+
+		</div>
+		</div>	
+		<!-- End Image size settings--> 
+			
+		<div class="clear"></div>	
+		<!-- Start Language Settings--> 
+		<h2 id="language" > Step 3 : Language Settings <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+		<div class="containers">
+		<div class="text">	
+		To Enable Languages login to your admin panel and do following settings.<br/>
+		<br/>
+		<p>
+		<strong> For Example To add Spanish Language :</strong> <br/>
+		Go to&nbsp; System &gt; Localisation &gt;<strong> Languages</strong>, <br/>
+		Click on “<strong>Add New</strong>” button to add new Language.<br/>
+		<strong>Language Name :</strong> Spanish<br/>
+		<strong>Code :</strong> es-es<br/>
+		<strong>Locale :</strong> es-es<br/>
+		<strong>Status :</strong> Enable,<br/>
+		<strong>Sort Order :</strong> as you like.<br/>		 
+		Click on “<strong>Save</strong>” button.<br/>
+		<br/>
+		</p><p>
+		<a href="files/images/spanish.jpg">
+		<img class="img-border" src="files/images/spanish.jpg" width="1000" height="400">
+		</a>
+		</p>
+		Same way you can do the settings for other Languages. 
+		<p></p>
+		</div>
+		</div>	
+		<!-- End Language Settings--> 	
+
+		<div class="clear"></div>	
+		
+		  <!-- Start Banner Settings--> 
+
+		<h2 id="bannersettings" > Step 4 : Banner Settings <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+		<div class="containers">
+
+		<div class="text">
+		<h3 class="title1" id="mainbanner" > 4.1 : Main Banner </h3> 
+		<br/>
+		<p>
+		For adding Main banners  go to Design &gt; <strong>Banners</strong>.<br />
+		(disable HP Products Tab by clicking edit button)<br />
+		Click on &ldquo;<strong>Add New</strong>&rdquo; button to add new banner.<br />
+		Give Banner Name : <strong> Home Page Slideshow</strong> <br/>
+		From status select <strong>Enabled</strong>,<br /> 
+		and click  on &ldquo;<strong>Add Banner</strong>&rdquo; button.<br />
+		Give title of your banner  and click on image to upload your banner.<br />
+		Again click on &ldquo;<strong>Add Banner</strong>&rdquo; button and upload another banners.<br />
+		Now click on  &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		</p><br/>
+		<a href="files/images/main-banner.jpg">
+		<img class="img-border" src="files/images/main-banner.jpg"  width="1000" />
+		</a>
+		<br/><br/>
+		Now to activate  your Main Banners go to <strong>Extensions</strong>  &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+		Now select <strong>Slideshow</strong>, then click on Edit link <br />
+		Give Module name: <strong>Slideshow-HomePage</strong>,<br/>
+		From banner select <strong>Main Banner</strong>,<br />
+		Give Width &amp; Height <strong> (1903 X 812) </strong>(your banner Width and height),<br />
+		From status select <strong>Enabled</strong>,<br />
+		Now click on  &ldquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+		<p>
+		<a href="files/images/Main-Banner_Activate.jpg">
+		<img class="img-border" src="files/images/Main-Banner_Activate.jpg"  width="1000" />
+		</a>
+		</p>
+		<div class="clear bottom-space"></div>					
+		<!-- End Banner Settings--> 
+
+		<div class="clear"></div>
+
+
+
+
+	   <!--Start LeftBanner Setting-->
+
+		<h3 class="title1" id="leftbanner" > 4.2 : Left Banner </h3>
+		<br/>
+		<p>
+		For adding LeftBanner go to Design &gt; <strong>Banners</strong>.<br />
+		Click on &ldquo;<strong>Add New</strong>&rdquo; button to add new banner.<br />
+		Give Banner Name : <strong> LeftBanner</strong> <br/>
+		From status select <strong>Enabled</strong>,<br /> 
+		and click  on &ldquo;<strong>Add Banner</strong>&rdquo; button.<br />
+		Give title of your banner and click on image to upload your banner.<br />
+		Now click on  &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+
+		<br/>	
+		<p>
+		<a href="files/images/Left_Banner.jpg">
+		<img class="img-border" src="files/images/Left_Banner.jpg"  width="1000" />
+		</a>
+		</p><br/>
+		Now to activate  your LeftBanner go to <strong>Extensions</strong>  &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+		Now select <strong>Banner</strong>, then click on Edit link <br />
+		Give Module name: <strong>Left Banner</strong>,<br/>
+		From banner select <strong>LeftBanner</strong>,<br />
+		Give Width &amp; Height <strong> (278 X 320) </strong>(your banner Width and height),<br />
+		From status select <strong>Enabled</strong>,<br />
+		Now click on  &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		<br/>
+		<p>
+		<a href="files/images/Left_Banner_Active.jpg">
+		<img class="img-border" src="files/images/Left_Banner_Active.jpg"  width="1000" />
+		</a>
+		</p>	
+
+		<br/>
+
+		<!--End Leftbanner Setting-->
+	   
+	   <!--Start Carousel Banners Setting-->
+			
+  		<h3 class="title1" id="carouselbanner" > 4.3 : Carousel Banners </h3>
+		<br/>
+		<p>
+        For adding Carousel banners  go to Design &gt; <strong>Banners</strong>.<br />
+		Click on &ldquo;<strong>Add New</strong>&rdquo; button to add new banner.<br />
+		Give Banner Name : <strong> Manufacturers</strong> <br/>
+		From status select <strong>Enabled</strong>,<br /> 
+		and click  on &ldquo;<strong>Add Banner</strong>&rdquo; button.<br />
+		Give title of your banner  and click on image to upload your banner.<br />
+		Now click on  &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		<br/>
+		<p>
+		<a href="files/images/Carousel_Banner.jpg">
+		<img class="img-border" src="files/images/Carousel_Banner.jpg"  width="1000" />
+		</a>
+	  	</p>	
+	 	<br/>
+	   <p>
+        Now to activate  your Carousel Banner go to <strong>Extensions</strong>  &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+        Now select <strong>Carousel</strong>, then click on Edit link <br />
+	    Give Module name: <strong>Carousel-HomePage</strong>,<br/>
+		From banner select <strong>Manufacturers</strong>,<br />
+		Give Width &amp; Height <strong> (117 X 94) </strong>(your banner Width and height),<br />
+		From status select <strong>Enabled</strong>,<br />
+		Now click on  &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+   
+		 <br/>  
+			<p>
+			<a href="files/images/Carousel_activate.jpg">
+			<img class="img-border" src="files/images/Carousel_activate.jpg"  width="1000" />
+			</a>
+	  		</p> 
+		</div>
+		</div>
+	
+   <!--End Carousel Banners Setting-->
+	<div class="clear"></div>	
+	
+	<!--Start Carousel HTML Content-->	
+	<h2 id="htmlcontent" > Step 5 : HTML Content <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<p> 
+	Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	Now select <strong>HTML Content</strong>, then click on Install (After install click on "Edit" link),<br /><br />
+ 
+
+
+        <!--Start Block top CMS content-->	
+        <p>
+		For <strong> Block top CMS </strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong> Block top CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+
+		</p>
+		<br/>
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea1')">
+		<div class="borderclass" id="testarea1">
+			&lt;div id="pstblocktopcms"&gt;<br/>
+			&lt;div class="blocktopcms"&gt;Welcome Here, Get Free Shipping On Orders Over $99! &lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+		</div><br/>
+		<p>
+		<a href="files/images/HTML Content.jpg">
+		<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>
+		<!--End Block top CMS content-->	
+
+        <!--Start Offer CMS content-->
+		<p>
+		For <strong> About us CMS</strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>About us CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+
+		</p>
+		<br/>
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea2')">
+		<div class="borderclass" id="testarea2">
+		&lt;div id="blockaboutus"&gt;<br/>
+		&lt;div class="aboutus-wapper"&gt;<br/>
+		&lt;div class="aboutus-img1"&gt;<br/>
+		&lt;span class="aboutusimg"&gt;<br/>
+		&lt;a href="#" class="abtimg"&gt;<br/>
+		&lt;img src="image/catalog/demo/banners/aboutus-img1.jpg" alt=""&gt;&lt;/a&gt;<br/>
+		&lt;/span&gt;<br/>
+		&lt;/div&gt;<br/>
+		&lt;div class="block-aboutus"&gt;<br/>
+		&lt;div class="aboutus_heading"&gt;&lt;span class="aboutus_title"&gt;Meet Our Best&lt;/span&gt;&lt;br&gt; &lt;span class="aboutus_title1"&gt;Chef Staff&lt;/span&gt; &lt;/div&gt;<br/>
+		&lt;div class="aboutus-desc"&gt;<br/>
+		&lt;span class="aboutus_para1"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuse<br/>
+		mod tempor incididunt ut labore et dolore magna aliqua. Ut enim mn<br/>
+		im veniam, quis nostrud exerctction ullamco laboris nisi.&lt;/span&gt; <br/>
+		&lt;div class="cat-btn"&gt; &lt;a href="#"&gt;Read more&lt;/a&gt; &lt;/div&gt;<br/>
+		&lt;/div&gt;<br/>
+		&lt;/div&gt;<br/>
+		&lt;/div&gt;<br/>
+		&lt;/div&gt;<br/>
+		</div><br/>
+		<p>
+		<a href="files/images/HTML Content.jpg">
+		<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>
+
+		<!-- Offer CMS image upload  -->
+		<p>
+
+		Follow below path to Upload the images in following path under root category
+		<br />
+		<span class="img-link">../image/catalog/demo/banners/aboutus-img1.jpg</span>
+		<br />
+		<br/> For aboutus cms image,
+		<br /> Give Image size <strong>(710 X 440)</strong>,
+		<br/>
+
+		<br/>
+		<p>
+		<a href="files/images/aboutus-image.jpg">
+		<img class="img-border" src="files/images/aboutus-image.jpg" width="500" />
+		</a>
+		</p>
+		</p><br/><br/>
+		<!--End Offer CMS content-->
+
+
+        <!--Start Service cms content-->	
+		<p>
+		For <strong> Service CMS block </strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>Service CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+		</p>
+		<br/>
+	    <input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea3')">
+	    <div class="borderclass" id="testarea3">  
+			&lt;div id="pst_serviceblock" class="pst_serviceblock-block link-block"&gt;<br/>
+			&lt;h5&gt;services&lt;/h5&gt;<br/>
+			
+			&lt;ul class="pst-service-wrapper"&gt;<br/>
+			&lt;li class="pst-service-item  col-xs-12 col-sm-6 col-md-3 col-lg-3"&gt;<br/>
+			&lt;div class="pst-service-inner"&gt;<br/>
+			&lt;div class="pst-image-block"&gt;<br/>
+			&lt;span class="pst-image-icon"&gt;&amp;nbsp;&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="service-right"&gt;<br/>
+			&lt;span class="pst-service-title"&gt;Free shipping &lt;/span&gt;<br/>
+			&lt;span class="pst-service-desc"&gt;on order over $90&lt;/span&gt;<br/>
+			
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="pst-service-item  col-xs-12 col-sm-6 col-md-3 col-lg-3"&gt;<br/>
+			&lt;div class="pst-service-inner"&gt;<br/>
+			&lt;div class="pst-image-block"&gt;<br/>
+			&lt;span class="pst-image-icon"&gt;&amp;nbsp;&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="service-right"&gt;<br/>
+			&lt;span class="pst-service-title"&gt;Online support&lt;/span&gt;<br/>
+			&lt;span class="pst-service-desc"&gt;Hours : 8AM-11PM&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="pst-service-item col-xs-12 col-sm-6 col-md-3 col-lg-3"&gt;<br/>
+			&lt;div class="pst-service-inner"&gt;<br/>
+			&lt;div class="pst-image-block"&gt;<br/>
+			&lt;span class="pst-image-icon"&gt;&amp;nbsp;&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="service-right"&gt;<br/>
+			&lt;span class="pst-service-title"&gt;money back&lt;/span&gt;<br/>
+			&lt;span class="pst-service-desc"&gt; gurantee in 7 days&lt;/span&gt;&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="pst-service-item col-xs-12 col-sm-6 col-md-3 col-lg-3"&gt;<br/>
+			&lt;div class="pst-service-inner"&gt;<br/>
+			&lt;div class="pst-image-block"&gt;<br/>
+			&lt;span class="pst-image-icon"&gt;&amp;nbsp;&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="service-right"&gt;<br/>
+			&lt;span class="pst-service-title"&gt;special gift &lt;/span&gt;<br/>
+			&lt;span class="pst-service-desc"&gt;weekly special offers&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;/ul&gt;<br/>
+			
+			&lt;/div&gt;<br/>
+		</div><br/>
+		<p>
+		   <a href="files/images/HTML Content.jpg">
+			  <img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		   </a>
+		</p>
+	    <br/>
+	    <!--End Service cms content-->
+
+
+        <!--Start Category CMS Block1 content-->
+        <p>
+		For <strong>Category CMS  Block</strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>Category CMS Block</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+
+		</p>
+		<br/>
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea4')">
+		<div class="borderclass" id="testarea4">
+			&lt;div id="pst_categorycmsblock"&gt;<br/>
+			&lt;div class="row"&gt;<br/>
+			
+			&lt;div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 categorycmsblock-desc"&gt;<br/>
+			
+			&lt;span class=" box-heading"&gt;healthy food &lt;br&gt;&lt;span class="cat-title1"&gt;restaurant&lt;/span&gt;&lt;/span&gt;<br/>
+			
+			&lt;div class="cat-des"&gt;<br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiuse
+			mod tempor incididunt ut labore et dolore magna aliqua. Ut enim mn
+			im veniam, quis nostrud exerctction ullamco laboris nisi.
+			&lt;div class="cat-btn"&gt; &lt;a href="#"&gt;shop now&lt;/a&gt; &lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			
+			&lt;/div&gt;<br/>
+			&lt;div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 categorycmsblock-wrapper"&gt;<br/>
+			&lt;ul&gt;<br/>
+			&lt;li class="cat-item col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;<br/>
+			&lt;div class="item-inner"&gt;<br/>
+			&lt;span class="cat-img"&gt;&lt;a href="#" class="cat-icon"&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;<br/>
+			
+			&lt;a href="#" class="cat-text"&gt;c-food&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="cat-item col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;<br/>
+			&lt;div class="item-inner"&gt;<br/>
+			&lt;span class="cat-img"&gt;&lt;a href="#" class="cat-icon"&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;a href="#" class="cat-text"&gt;fruits&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="cat-item col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;<br/>
+			&lt;div class="item-inner"&gt;<br/>
+			&lt;span class="cat-img"&gt;&lt;a href="#" class="cat-icon"&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;a href="#" class="cat-text"&gt;juice&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="cat-item col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;<br/>
+			&lt;div class="item-inner"&gt;<br/>
+			&lt;span class="cat-img"&gt;&lt;a href="#" class="cat-icon"&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;a href="#" class="cat-text"&gt;water&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="cat-item col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;<br/>
+			&lt;div class="item-inner"&gt;<br/>
+			&lt;span class="cat-img"&gt;&lt;a href="#" class="cat-icon"&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;a href="#" class="cat-text"&gt;burger&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="cat-item col-xs-12 col-sm-6 col-md-4 col-lg-4"&gt;<br/>
+			&lt;div class="item-inner"&gt;<br/>
+			&lt;span class="cat-img"&gt;&lt;a href="#" class="cat-icon"&gt;&amp;nbsp;&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;a href="#" class="cat-text"&gt;view all&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;/ul&gt;<br/>
+			&lt;/div&gt;<br/>
+			
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+
+		</div><br/>
+		<p>
+		<a href="files/images/HTML Content.jpg">
+		<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>
+
+
+        <!--Start Testimonial CMS Block content-->
+        <p>
+        For <strong>Testimonial CMS Block</strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>Testimonial CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+		</p>
+
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea6')">
+		<div class="borderclass" id="testarea6">
+			&lt;div id="psttestimonialcmsblock" class="testimonial-block"&gt;<br/>
+			&lt;div class="testimonial-inner"&gt;<br/>
+			&lt;ul id="psttestimonial-carousel" class="psttestimonial-carousel product_list"&gt;<br/>
+			&lt;li class="item"&gt;<br/>
+			&lt;div class="testimonial-img"&gt;<br/>
+			&lt;a href="#" title="Mack Jeckno"&gt;<br/>
+			&lt;img alt="testmonial" src="image/catalog/demo/banners/person1.jpg"&gt;<br/>
+			&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="testimonial-desc"&gt;<br/>
+			&lt;p&gt;Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lo rem quis bendum nisi elit
+			consequat ipsum, nec sagittis sem nibh id elit. Duissed odiio sit amet. Lorem Ipsum proin nibh vel velit a
+			uctor aliquet. Aenean sollicitudin. &lt;/p&gt;<br/>
+			&lt;div class="testimonial-info"&gt;<br/>
+			&lt;span class="name"&gt;&lt;a href="#"&gt;Mack Jeckno&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;span class="designation"&gt;Financer&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="item"&gt;<br/>
+			&lt;div class="testimonial-img"&gt;<br/>
+			&lt;a href="#" title="jack loor"&gt;<br/>
+			&lt;img alt="testmonial" src="image/catalog/demo/banners/person2.jpg"&gt;<br/>
+			&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="testimonial-desc"&gt;<br/>
+			&lt;p&gt;Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lo rem quis bendum nisi elit
+			consequat ipsum, nec sagittis sem nibh id elit. Duissed odiio sit amet. Lorem Ipsum proin nibh vel velit a
+			uctor aliquet. Aenean sollicitudin. &lt;/p&gt;<br/>
+			&lt;div class="testimonial-info"&gt;<br/>
+			&lt;span class="name"&gt;&lt;a href="#"&gt;jack loor&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;span class="designation"&gt;accountant&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="item"&gt;<br/>
+			&lt;div class="testimonial-img"&gt;<br/>
+			&lt;a href="#" title="john Mack"&gt;<br/>
+			&lt;img alt="testmonial" src="image/catalog/demo/banners/person3.jpg"&gt;<br/>
+			&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="testimonial-desc"&gt;<br/>
+			&lt;p&gt;Lorem Ipsum is therefore always free from repetition or non-characteristic words etc.&lt;/p&gt;<br/> 
+			&lt;div class="testimonial-info"&gt;<br/>
+			&lt;span class="name"&gt;&lt;a href="#"&gt;john Mack&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;span class="designation"&gt;Financer&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li class="item"&gt;<br/>
+			&lt;div class="testimonial-img"&gt;<br/>
+			&lt;a href="#" title="john due"&gt;<br/>
+			&lt;img alt="testmonial" src="image/catalog/demo/banners/person4.jpg"&gt;<br/>
+			&lt;/a&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;div class="testimonial-desc"&gt;<br/>
+			&lt;p&gt;Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lo rem quis bendum nisi elit
+			consequat ipsum, nec sagittis sem nibh id elit. Duissed odiio sit amet. Lorem Ipsum proin nibh vel velit a
+			uctor aliquet. Aenean sollicitudin.&lt;/p&gt;<br/>  
+			&lt;div class="testimonial-info"&gt;<br/>
+			&lt;span class="name"&gt;&lt;a href="#"&gt;john due&lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;span class="designation"&gt;Web developer&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;/ul&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/div&gt;<br/>
+		</div><br/>
+		<p>
+		<a href="files/images/HTML Content.jpg">
+		<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+		</p><br/>
+
+		<!-- Testimonial CMS image upload  -->
+		<p>
+
+		Follow below path to Upload the images in following path under root category
+		<br />
+		<span class="img-link">../image/catalog/demo/banners/person1.jpg</span>
+		<br />
+		<br/> For testimonial cms image,
+		<br /> Give Image size <strong>(320 X 320)</strong>,
+		<br/>
+
+		<br/>
+		<p>
+		<a href="files/images/testimonial-image.jpg">
+		<img class="img-border" src="files/images/testimonial-image.jpg" width="500" />
+		</a>
+		</p>
+		</p><br/><br/>
+		<!-- Testimonial CMS image upload -->
+
+		<!--End Testimonial CMS Block content-->
+
+
+        <!--Start Footer Contact CMS Block content-->
+
+	    For <strong>  Footer Contact CMS </strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong> Footer Contact CMS </strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+		</p>
+		<br/>
+
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea7')">
+		<div class="borderclass" id="testarea7">
+			&lt;div id="contact"&gt;<br/>
+			&lt;h5&gt;Contact us&lt;/h5&gt;<br/>
+			&lt;ul id="block-contact_list"&gt;<br/>
+			&lt;li&gt;<br/>
+			&lt;div class="data"&gt;<br/>
+			&lt;span&gt;Address : 507- UTC, Near Apple hospital, Udhana road.&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li&gt;<br/>
+			&lt;div class="data"&gt;<br/>
+			&lt;span&gt;Mail : &lt;a href="#"&gt;support@company.com &lt;/a&gt;&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;li&gt;<br/>
+			&lt;div class="data"&gt;<br/>
+			&lt;span&gt;Phone : +7852478965&lt;/span&gt;<br/>
+			&lt;/div&gt;<br/>
+			&lt;/li&gt;<br/>
+			&lt;/ul&gt;<br/>
+			&lt;/div&gt;<br/> 
+		</div>
+		<br/>
+		<p>
+		<a href="files/images/HTML Content.jpg">
+		<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+		</p><br/>
+		<!--End Footer Contact CMS Block content-->
+
+        <!--Start Footer Social CMS Block content-->
+        <p>
+	    For <strong>Footer Social CMS</strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>Footer Social CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+	 	From status select <strong>Enabled</strong>,<br /><br />
+		
+		</p>
+		<br/>
+	    <input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea8')">
+	    <div class="borderclass" id="testarea8">
+			&lt;div id="social-cms"&gt;<br/>
+			&lt;ul class="social"&gt;<br/> 
+			&lt;li class="facebook"&gt;&lt;a href="#"&gt;Facebook&lt;/a&gt;&lt;/li&gt;<br/> 
+			&lt;li class="twitter"&gt;&lt;a href="#"&gt;Twitter&lt;/a&gt;&lt;/li&gt;<br/> 
+			&lt;li class="youtube"&gt;&lt;a href="#"&gt;Youtube&lt;/a&gt;&lt;/li&gt;<br/> 
+			&lt;li class="pinterest"&gt;&lt;a href="#"&gt;Pinterest&lt;/a&gt;&lt;/li&gt;<br/>
+			&lt;li class="instagram"&gt;&lt;a href="#"&gt;Instagram&lt;/a&gt;&lt;/li&gt;<br/>
+			&lt;/ul&gt; <br/>
+			&lt;/div&gt; <br/>
+		</div> <br/>
+		<p>
+		<a href="files/images/HTML Content.jpg">
+			<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+	    </p>
+	    <br/>
+	    <p>
+	    <br/>
+	     <!--End Footer Social CMS Block content-->
+
+
+		<!--Start Footer Payment CMS Block content-->
+		<p>
+		For <strong> Footer Payment CMS </strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>Footer Payment CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+		</p>
+		<br/>
+
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea9')">
+		<div class="borderclass" id="testarea9">
+		&lt;div id="paymentcmsblock"&gt;<br />
+   &lt;div class="payment-block"&gt;<br />	
+			&lt;ul class="payment-block-inner"&gt;<br />
+				&lt;li class="discover icon"&gt;&lt;a href="#"&gt;&lt;img src="image/catalog/demo/banners/discover.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br />
+				&lt;li class="maestro icon"&gt;&lt;a href="#"&gt;&lt;img src="image/catalog/demo/banners/maestro.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                &lt;li class="master icon"&gt;&lt;a href="#"&gt;&lt;img src="image/catalog/demo/banners/master.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br />
+				&lt;li class="visa icon"&gt;&lt;a href="#"&gt;&lt;img src="image/catalog/demo/banners/visa.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br />
+				&lt;li class="paypal icon"&gt;&lt;a href="#"&gt;&lt;img src="image/catalog/demo/banners/paypal.jpg" alt=""&gt;&lt;/a&gt;&lt;/li&gt;<br />
+			&lt;/ul&gt;<br />
+	&lt;/div&gt;<br />	
+&lt;/div&gt;<br />
+		</div>
+		<br />
+		<p>
+		<a href="files/images/HTML Content.jpg">
+		<img class="img-border" src="files/images/HTML Content.jpg"  width="1000" />
+		</a>
+		</p><br/>
+
+		<!-- Footer Payment CMS image upload  -->
+		<p>
+
+		Follow below path to Upload the images in following path under root category
+		<br />
+		<span class="img-link">../image/catalog/demo/banners/discover.jpg</span>
+		<br />
+		<br/> For payment cms image,
+		<br /> Give Image size <strong>(35 X 21)</strong>,
+		<br/>
+
+		<br/>
+		<p>
+		<a href="files/images/paymentcms-image.jpg">
+		<img class="img-border" src="files/images/paymentcms-image.jpg" width="500" />
+		</a>
+		</p>
+		</p><br/><br/>
+		<!-- Footer Payment CMS image upload -->
+
+		<!--End Footer Payment CMS Block content-->
+		
+		
+			<p>
+		For <strong> Sub Banner CMS </strong> <br />
+		Click on <strong>Add Module</strong> to add  cms block.<br />
+		Give Module Name: <strong>Sub Banner CMS</strong> <br />
+		Now click on <strong>Code View</strong> button in text editor block ,copy and paste this code, After this again click on <strong>Code View</strong> button to save your HTML content.
+		From status select <strong>Enabled</strong>,<br /><br />
+		</p>
+		<br/>
+
+		<input class="copy-btn" type="button" value="Click Here & Press Ctrl + C" onClick="fnSelect('testarea19')">
+		<div class="borderclass" id="testarea19">
+		&lt;div id="subbanner" class="subbanner"&gt;<br />
+  &lt;div class="subbanner-wrapper"&gt;<br />
+      &lt;ul&gt;<br />
+         &lt;li class="subbanner-item"&gt;
+            &lt;div class="subbanner-item-inner"&gt;<br />
+               &lt;a href="#" class="cms-img"&gt;&lt;img src="image/catalog/demo/banners/sub-banner.jpg" alt=""&gt;&lt;/a&gt;<br />
+            &lt;/div&gt;<br />
+         &lt;/li&gt; <br />
+      &lt;/ul&gt;<br />
+   &lt;/div&gt;<br />
+&lt;/div&gt;<br />
+		</div>
+		<br />
+
+<p>
+
+		Follow below path to Upload the images in following path under root category
+		<br />
+		<span class="img-link">../image/catalog/demo/banners/sub-banner.jpg</span>
+		<br />
+		<br/> For subbanner cms image,
+		<br /> Give Image size <strong>(1200 X 200)</strong>,
+		<br/>
+
+		<br/>
+		<p>
+		<a href="files/images/subbannercms-image.jpg">
+		<img class="img-border" src="files/images/subbannercms-image.jpg" width="500" />
+		</a>
+		</p>
+		</p><br/><br/>
+
+
+		 <!--End Carousel HTML Content-->	
+
+
+
+	    <div class="clear"></div>
+		
+		
+	
+	
+
+	
+	    <!--Start Bestsellers-->	
+		<h2 id="bestseller" > Step 6 : Bestsellers Products <a class="top" title="Go to Top" href="#Thementic">Back to Top</a> </h2>
+		<div class="containers">
+		<div class="text">
+		
+		<!--Start bestseller Product-->
+		<p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Bestseller</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+			Give Module name:<strong>Home Bestseller Products</strong> ,<br />
+			Give Limit : <strong>12</strong>,<br />
+			Give Image size <strong>(278 X 320)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+			From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+			<br/>
+			<p>
+			<a href="files/images/bestseller.jpg">
+				<img class="img-border" src="files/images/bestseller.jpg"  width="1000" />
+			</a>
+			</p>
+		</p> 
+		<!--End Latest Product-->	
+		
+
+		<!--Start sidebestsellers-->	
+		<p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Bestsellers</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+			Give Module name:<strong>Sidebar-Bestsellers</strong> ,<br />
+			Give Limit : <strong>3</strong>,<br />
+			Give Image size <strong>(80 X 92)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+			From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+			<br/>
+			<p>
+			<a href="files/images/Sidebestsellers.jpg">
+				<img class="img-border" src="files/images/Sidebestsellers.jpg"  width="1000" />
+			</a>
+			</p>
+		</p>
+		<!--End sidebestsellers-->	
+	</div>
+	</div>
+	<!--End sideBestsellers-->
+		
+		
+	<div class="clear"></div>	
+	
+	<!--Start Latest Product-->		
+	<h2 id="latest" > Step 7 : Latest Product<a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<!--Start Latest Product-->
+	   <p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Latest</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+			Give Module name:<strong>Home Latest Products</strong> ,<br />
+			Give Limit : <strong>12</strong>,<br />
+			Give Image size <strong>(278 X 320)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+			From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		<br/>
+
+		<p>
+		<a href="files/images/latest.jpg">
+			<img class="img-border" src="files/images/latest.jpg"  width="1000" />
+		</a>
+		</p>
+	</p> 
+	<!--End Latest Product-->	
+
+	<!--Start Side-Latest Product-->
+	    <p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Latest</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+			Give Module name:<strong>Sidebar-LatestProducts</strong> ,<br />
+			Give Limit : <strong>3</strong>,<br />
+			Give Image size <strong>(80 X 92)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+			From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		<br/>
+		<p>
+		<a href="files/images/Side-latest.jpg">
+			<img class="img-border" src="files/images/Side-latest.jpg"  width="1000" />
+		</a>
+		</p>
+	</p> 
+	<!--End Side-Latest Product-->	
+		
+
+	<div class="clear"></div>	
+
+
+	<!--Start Deal Of The Day Product-->				
+	<h2 id="special" > Step 8 : Special Product <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+		<p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Special</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+			Give Module name:<strong> Special Product</strong> ,<br />
+			Give Limit : <strong>12</strong>,<br />
+			Give Image size <strong>(278 X 320)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+			From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+			<br/>
+			<p>
+			<a href="files/images/special.jpg">
+				<img class="img-border" src="files/images/special.jpg"  width="1000" />
+			</a>
+			</p>
+		</p> 
+	</div>
+	</div>	
+	
+    <!--End Deal Of The Day Product-->	
+	<p>
+        For Sidebar Special Module,<br/>
+		Give Module Name = <strong>Sidebar-Special Product</strong><br />
+		Give Limit = <strong>3</strong>,<br />
+		Give Image size <strong>(80 X 92)</strong>,<br />
+		From Status select <strong>Enable</strong>.<br />
+		From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+		Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		<br/>
+		<p>
+		<a href="files/images/Sidebar_Specials.jpg">
+			<img class="img-border" src="files/images/Sidebar_Specials.jpg"  width="1000" />
+		</a>
+		<p />
+	<p />
+	<br/>
+	</div>
+	</div>	
+	<!--End Special Products-->
+	
+
+	<div class="clear"></div>	
+
+
+
+	<!--Start Featured Products-->	
+	<h2 id="featured" > Step 9 : Featured Products <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<!--Start Featured Products-->	
+		<p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Featured</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+	        
+			Give Module name:<strong>Home Feature Products</strong> ,<br />
+			Give Limit = <strong>12</strong>,<br />
+			Give Image size <strong>(278 X 320)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+		    From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+			<br/>
+		<p>
+			<a href="files/images/Featured-home.jpg">
+				<img class="img-border" src="files/images/Featured-home.jpg"  width="1000" />
+			</a>
+		</p>
+	</p>
+	<!--End Featured Products-->	
+	<!--Start Side-Featured Products-->	
+	    <p>
+		    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Featured</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+	        
+			Give Module name:<strong>Sidebar-FeatureProducts</strong> ,<br />
+			Give Limit = <strong>4</strong>,<br />
+			Give Image size <strong>(80 X 92)</strong>,<br />
+			From Status select <strong>Enable</strong>, <br />
+			From Slider/Grid select <strong> slider</strong> or select <strong>Grid</strong> <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+		<br/>
+		<p>
+			<a href="files/images/sidebarFeatured-home.jpg">
+				<img class="img-border" src="files/images/sidebarFeatured-home.jpg"  width="1000" />
+			</a>
+		</p>
+	</p>
+	<!--End Side-Featured Products-->
+	</div>
+	</div>
+	<!--End Featured Products-->	
+
+
+	<!--Start Account-->		
+	<div class="clear"></div>		
+	<h2 id="account" > Step 10 : Account <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<p>
+			Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+	        Now select <strong>Account</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+			From Status select <strong>Enable</strong>, <br />
+			Click on &ldquo;<strong>Save</strong>&rdquo; button.
+		
+	</p>  
+	</div>
+	</div>
+	<!--End Account-->	
+	<div class="clear"></div>		
+	
+	<!--Start Affiliate-->	
+	<h2 id="affiliate" > Step 11 : Affiliate <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<p>
+	    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+        Now select <strong>Affiliate</strong>, then Edit (Click on Install link if Edit link in not there),<br />
+		From Status select <strong>Enable</strong>, <br />
+		Click on &ldquo;<strong>Save</strong>&rdquo; button.
+		
+	</p>
+	</div>
+	</div>	
+	<!--End Affiliate-->	
+	<div class="clear"></div>		
+		
+	<!--Start Information-->		
+	<h2 id="information" > Step 12 : Information <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<p>
+	    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+        Now select <strong>Information</strong>, then Edit (Click on Install link if Edit link is not there),<br />
+		From Status select <strong>Enable</strong>, <br />
+		Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+	
+	</p>
+	</div>
+	</div>	
+	<!--End  Information-->	
+	<div class="clear"></div>	
+
+	<!--Start Newsletter-->		
+	<h2 id="newsletter" > Step 13 : Newsletter <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<p>
+	    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+        Now select <strong>Newsletter</strong>, then Edit (Click on Install link if Edit link is not there),<br />
+		From Status select <strong>Enable</strong>, <br />
+		Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/>
+	
+	</p>
+	</div>
+	</div>	
+	<!--End  Newsletter-->	
+	<div class="clear"></div>	
+
+
+	<!--Start Blog-->		
+	<h2 id="themeblog" > Step 14 : ThemeBlog <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">
+	<p>
+		
+
+	    Go to <strong>Extensions</strong> &gt; <strong>Extensions</strong>. Select <strong>Modules</strong> from Dropdown.<br />
+        Now select <strong>ThemeBlog</strong>, then Edit (Click on Install link if Edit link is not there),<br />
+	
+
+        
+		Give Module name:<strong>Home Blog</strong> ,<br />
+		Give Limit = <strong>6</strong>,<br />
+		Give Thumb size <strong>(893 X 892)</strong>,<br />
+		From Status select <strong>Enable</strong>, <br />
+		Character Limit: <strong> 100 </strong><br/>
+		Allow Comments <strong>Enable</strong>, <br />
+		Login Required	 <strong>Disable</strong>, <br />
+		Automatic Approval <strong>Enable</strong>, <br />
+		Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+		<br/>
+		<p>
+		<a href="files/images/HomePage-Blog.jpg">
+			<img class="img-border" src="files/images/HomePage-Blog.jpg"  width="1000" />
+		</a>
+		</p>
+		</br>
+		
+		Now add Blog item to be display on your store<br/>
+        Title: <strong>App collections</strong> <br />
+		Content: <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong><br />
+		<p>
+		<br/>
+		<a href="files/images/bloggeneral.jpg">
+			<img class="img-border" src="files/images/bloggeneral.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>
+		
+		Now go to <strong>Data</strong> tab, </br>
+        Status: <strong> Enable</strong> <br />
+		Image: <strong> Brose your image.</strong><br />
+		Select previous blogs category for blog item :<strong>Home Blog</strong>,</br>
+		Click on &ldquo;<strong>Save</strong>&rdquo; button.<br/><br/>
+		<p>
+		<br/>
+		<a href="files/images/blogdata.jpg">
+			<img class="img-border" src="files/images/blogdata.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>
+		
+	<!--	
+		You can view the full list of blogs.<br/>
+		<p>
+		<br/>
+		<a href="files/images/bloglist.jpg">
+			<img class="img-border" src="files/images/bloglist.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>-->
+		
+		You can view , Modify or Delete Comment<br/>
+		<p>
+		<br/>
+		<a href="files/images/viewcomment.jpg">
+			<img class="img-border" src="files/images/viewcomment.jpg"  width="1000" />
+		</a>
+		</p>
+		<br/>
+	
+	
+	</p>
+	</div>
+	</div>	
+	<!--End  Blog-->	
+	<div class="clear"></div>	
+
+
+		
+	<!--Start Layout Setting-->	
+	<h2 id="layoutsetting" > Step 15 : Layout Setting <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="containers">
+	<div class="text">	
+	 For Layout Setting  Go to&nbsp; Design &gt;<strong> Layouts </strong>, <br />
+	 
+	 For <strong>Home</strong> Layout setting Click on Home layout Edit link, and set below settings.<br /><br />
+	   <p>
+			<a href="files/images/home-setting.jpg">
+				<img class="img-border" src="files/images/home-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		For <strong>Blog </strong>Layout setting Click on Blog layout Edit link,  and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/blog-setting.jpg">
+				<img class="img-border" src="files/images/blog-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+	 For <strong> Account </strong>Layout setting Click on Account layout Edit link,  and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/account-setting.jpg">
+				<img class="img-border" src="files/images/account-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+	  For <strong> Affiliate </strong>Layout setting Click on Affiliate layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/affiliate-setting.jpg">
+				<img class="img-border" src="files/images/affiliate-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Category </strong>Layout setting Click on Category layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/category-setting.jpg">
+				<img class="img-border" src="files/images/category-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		 For <strong> Checkout </strong>Layout setting Click on Checkout layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/checkout-setting.jpg">
+				<img class="img-border" src="files/images/checkout-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		For <strong> Compare </strong>Layout setting Click on Contact layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/compare-setting.jpg">
+				<img class="img-border" src="files/images/compare-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Contact </strong>Layout setting Click on Contact layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/contact-setting.jpg">
+				<img class="img-border" src="files/images/contact-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Default </strong>Layout setting Click on Default layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/defaultpage-setting.jpg">
+				<img class="img-border" src="files/images/defaultpage-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Information </strong>Layout setting Click on Account layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/information-setting.jpg">
+				<img class="img-border" src="files/images/information-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Manufacture </strong>Layout setting Click on Manufacture layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/manufacture-setting.jpg">
+				<img class="img-border" src="files/images/manufacture-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Product </strong>Layout setting Click on Product layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/product-setting.jpg">
+				<img class="img-border" src="files/images/product-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		 For <strong> Search </strong>Layout setting Click on Sitemap layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/search-setting.jpg">
+				<img class="img-border" src="files/images/search-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		 For <strong> Sitemap </strong>Layout setting Click on Sitemap layout Edit link, and set below settings.<br /><br />
+	  <p>
+			<a href="files/images/sitemap-setting.jpg">
+				<img class="img-border" src="files/images/sitemap-setting.jpg"  width="1000" />
+			</a>
+		</p><br/>
+		
+		
+	</div>
+	</div>
+	<!--End Layout Setting-->	
+	
+	<h2 id="morehelp" >Step 16 : Need More Help? <a class="top" title="Go to Top" href="#Thementic">Back to Top</a></h2>
+	<div class="text">
+		<p> 
+		Once again, thank you so much for purchasing the theme. We are glad to help you if you have any questions relating to this theme.</br> You can contact us and submit technical Support Ticket from our support desk.
+		
+		</p>
+	</div>
+	<br/>
+  <!-- End Thementic-->
+  <div class="clear"></div>
+  
+	</div>
+	<br /><br />		
+</div>  
+</div>
+</body>
+</html>
