@@ -1,18 +1,18 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:8080/template/v3.0.2.x/Quickstart/OPC0100372/admin/');
-define('HTTP_CATALOG', 'http://localhost:8080/template/v3.0.2.x/Quickstart/OPC0100372/');
+define('HTTP_SERVER', 'http://localhost:8080/E-commerse/v3.0.2.x/Quickstart/OPC0100372/admin/');
+define('HTTP_CATALOG', 'http://localhost:8080/E-commerse/v3.0.2.x/Quickstart/OPC0100372/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost:8080/template/v3.0.2.x/Quickstart/OPC0100372/admin/');
-define('HTTPS_CATALOG', 'http://localhost:8080/template/v3.0.2.x/Quickstart/OPC0100372/');
+define('HTTPS_SERVER', 'http://localhost:8080/E-commerse/v3.0.2.x/Quickstart/OPC0100372/admin/');
+define('HTTPS_CATALOG', 'http://localhost:8080/E-commerse/v3.0.2.x/Quickstart/OPC0100372/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/xampp/htdocs/template/v3.0.2.x/Quickstart/OPC0100372/admin/');
-define('DIR_SYSTEM', 'C:/xampp/htdocs/template/v3.0.2.x/Quickstart/OPC0100372/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/template/v3.0.2.x/Quickstart/OPC0100372/image/');
+define('DIR_APPLICATION', 'C:/xampp/htdocs/E-commerse/v3.0.2.x/Quickstart/OPC0100372/admin/');
+define('DIR_SYSTEM', 'C:/xampp/htdocs/E-commerse/v3.0.2.x/Quickstart/OPC0100372/system/');
+define('DIR_IMAGE', 'C:/xampp/htdocs/E-commerse/v3.0.2.x/Quickstart/OPC0100372/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
-define('DIR_CATALOG', 'C:/xampp/htdocs/template/v3.0.2.x/Quickstart/OPC0100372/catalog/');
+define('DIR_CATALOG', 'C:/xampp/htdocs/E-commerse/v3.0.2.x/Quickstart/OPC0100372/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
